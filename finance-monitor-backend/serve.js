@@ -3,6 +3,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 
@@ -35,7 +36,7 @@ app.get('/api/transactions', (req, res) => {
     });
 });
 
-const PORT = 8080;
+const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });

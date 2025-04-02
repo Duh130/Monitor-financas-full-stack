@@ -11,7 +11,8 @@ function App() {
   const [type, setType] = useState('');
 
   useEffect(() => {
-    axios.get('http://192.168.0.112:8080/transactions')
+    // Altere a URL para o endereço correto do seu backend
+    axios.get('http://localhost:3000/api/transactions') // Corrigido para a porta 3000
       .then(response => {
         setTransaction(response.data);
       })
@@ -29,7 +30,8 @@ function App() {
       type,
     };
 
-    axios.post('http://192.168.0.112:8080/transactions', newTransaction)
+    // Alterando a URL para a porta 3000
+    axios.post('http://192.168.0.112:3000/api/transactions', newTransaction)
       .then(response => {
         setTransaction([...transaction, response.data]);
         setDescription('');

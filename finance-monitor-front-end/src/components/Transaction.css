@@ -1,0 +1,51 @@
+/* Transaction.css */
+
+/* Container principal */
+.transaction-container {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #cc4e4e;
+  }
+  
+  /* Título */
+  .transaction-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilo para a lista de transações */
+  .transaction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transaction-item {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-item strong {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .transaction-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+    .transaction-item p.amount {
+    font-weight: bold;
+}
+
+    .transaction-item p[type="income"] {
+    color: green;
+}
+
+    .transaction-item p[type="expense"] {
+    color: red;
+}
